@@ -1,3 +1,3 @@
 # Micronaut Library Template
 
-Example of micronaut library template
+Template for Micronaut 2 library for Java 11+.
