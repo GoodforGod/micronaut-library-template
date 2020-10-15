@@ -36,7 +36,7 @@ configurations {
 }
 
 micronaut {
-    version '2.1.0'
+    version '2.1.1'
     processing {
         incremental true
         module project.name
@@ -48,10 +48,12 @@ micronaut {
 dependencies {
     annotationProcessor 'io.micronaut:micronaut-inject-java'
 
+    implementation 'io.micronaut:micronaut-runtime'
+
     testAnnotationProcessor 'io.micronaut:micronaut-inject-java'
 
-    testCompile 'io.micronaut.test:micronaut-test-core'
-    testCompile 'io.micronaut.test:micronaut-test-junit5'
+    testImplementation 'io.micronaut.test:micronaut-test-core'
+    testImplementation 'io.micronaut.test:micronaut-test-junit5'
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testImplementation 'org.junit.jupiter:junit-jupiter-api'
@@ -66,7 +68,7 @@ test {
     }
 
     environment([
-            "USE_INTEGRATION_TESTS"   : "$useIntegrationTests",
+            "USE_INTEGRATION_TESTS"   : "$integrationTestsEnabled",
     ])
 }
 
