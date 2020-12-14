@@ -2,7 +2,7 @@ plugins {
     id 'jacoco'
     id 'maven-publish'
 
-    id 'io.micronaut.library' version '1.1.0'
+    id 'io.micronaut.library' version '1.2.0'
     id 'org.sonarqube' version '3.0'
     id 'com.diffplug.gradle.spotless' version '4.4.0'
 }
@@ -36,17 +36,20 @@ configurations {
 }
 
 micronaut {
-    version '2.1.4'
+    version '2.2.1'
     processing {
         incremental true
         module project.name
         group project.group
-        annotations 'micronaut.library.*'
+        annotations 'micronaut.library.template.*'
     }
 }
 
 dependencies {
     annotationProcessor 'io.micronaut:micronaut-inject-java'
+
+    implementation 'io.micronaut:micronaut-inject-java'
+
 
     testAnnotationProcessor 'io.micronaut:micronaut-inject-java'
 

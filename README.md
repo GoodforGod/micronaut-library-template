@@ -1,6 +1,6 @@
 # Micronaut Library Template
 
-Template for Micronaut 2 library for Java 11+.
+Template for Micronaut 2 Library for Java 11+.
 
 ## Features
 - Micronaut Plugin for BOM and version management.
