@@ -37,7 +37,7 @@ configurations {
 }
 
 micronaut {
-    version "3.0.0"
+    version("3.0.0")
     processing {
         incremental(true)
         module(project.name)
