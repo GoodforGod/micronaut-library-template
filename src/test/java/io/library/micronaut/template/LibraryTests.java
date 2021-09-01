@@ -1,4 +1,4 @@
-package micronaut.library.template;
+package io.library.micronaut.template;
 
 /**
  * @author GoodforGod
