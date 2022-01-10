@@ -3,13 +3,35 @@
 Template for Micronaut library for Java 11+.
 
 ## Features
-- Micronaut Plugin configured
-- Spotless for Code Style and Formatting.
-- .gitignore and .gitattributes for proper ignore and symbols check.
-- .editorconfig for simple configs code style and encoding UTF-8.
-- Proper Gradle and Gradle Wrapper configuration.
-- application.yaml with basic setup for testing
-- logback.xml configuration
-- JaCoCo configured
-- Test and Run sections configured
-- Test and runtime dependencies' setup for basic application
+- Gradle, build, wrapper, properties configured.
+- [Code Style](https://goodforgod.dev/posts/3/), formatting , .gitignore configured.
+- application.yaml, logback.xml, environment variables for local ruin\test configured.
+- Dockerfile for packaging application configured.
+
+## Publish Locally
+
+```shell
+./gradlew publishToMavenLocal
+```
+
+## Test
+
+```shell
+./gradlew test
+```
+
+## Code Style
+
+Code Style is provided and configured with Spotless, you can read more about [Code Style here](https://goodforgod.dev/posts/3/)
+
+Check Code Style:
+
+```shell
+./gradlew spotlessCheck
+```
+
+Apply Code Style:
+
+```shell
+./gradlew spotlessApply
+```
